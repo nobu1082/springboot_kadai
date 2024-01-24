@@ -73,7 +73,7 @@
                                  
                                   <div class="form-group row mb-3">
                                      <div class="col-md-4">
-                                         <label for="openTime" class="col-form-label text-md-left fw-bold">営業開始時間</label>
+                                         <label for="openTime" class="col-form-label text-md-left fw-bold">営業終了時間（〇〇時〇〇分と入力）</label>
                                      </div> 
                                      <div class="col-md-8">
                                          <div th:if="${#fields.hasErrors('openTime')}" class="text-danger small mb-2" th:errors="*{openTime}"></div>
@@ -83,7 +83,7 @@
                                  
                                   <div class="form-group row mb-3">
                                      <div class="col-md-4">
-                                         <label for="closeTime" class="col-form-label text-md-left fw-bold">営業終了時間</label>
+                                         <label for="closeTime" class="col-form-label text-md-left fw-bold">営業終了時間（〇〇時〇〇分と入力）</label>
                                      </div> 
                                      <div class="col-md-8">
                                          <div th:if="${#fields.hasErrors('closeTime')}" class="text-danger small mb-2" th:errors="*{closeTime}"></div>
@@ -135,7 +135,7 @@
                                  
                                    <div class="form-group row mb-3">
                                      <div class="col-md-4">
-                                         <label for="closeddays" class="col-form-label text-md-left fw-bold">店休日(曜日単位)</label>
+                                         <label for="closeddays" class="col-form-label text-md-left fw-bold">お店のお休み(曜日単位)</label>
                                      </div>
                                      <div class="col-md-8">
                                          <div th:if="${#fields.hasErrors('closedDays')}" class="text-danger small mb-2" th:errors="*{closedDays}"></div>

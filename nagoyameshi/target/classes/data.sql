@@ -15,3 +15,22 @@ INSERT IGNORE INTO stores (id, category_id , name, image_name, description, open
 VALUES (7, 7,'SAMURAI', 'store07.jpg', '最寄り駅からバスで20分。','18時00分','21時00分',6000,'073-0146','愛知県名古屋市西町X-XX-XXX-XX-XX','012-345-678','日曜日', '2023-04-02','2023-04-03');
 INSERT IGNORE INTO stores (id, category_id , name, image_name, description, open_time, close_time, amount, postal_code, address, phone_number,closed_days,created_at,updated_at) 
 VALUES (8, 1,'SAMURAI屋', 'store08.jpg', '最寄り駅からバスで30分。','18時00分','21時00分',6000,'073-0199','愛知県名古屋市東町X-XX-XX','012-345-678','日曜日', '2023-04-02','2023-04-03');
+-- roleテーブル
+INSERT IGNORE INTO roles (id, name) 
+VALUES (1, 'Role_GENERAL');
+INSERT IGNORE INTO roles (id, name) 
+VALUES (2, 'Role_ADMIN');
+
+-- subscテーブル
+INSERT IGNORE INTO subsc (id, name) 
+VALUES (1, 'Role_SBUSC');
+INSERT IGNORE INTO subsc (id, name) 
+VALUES (2, 'Role_NOSUBSC');
+
+-- categoryテーブル
+INSERT IGNORE INTO category (id, name)
+Values (1, '和食');
+INSERT IGNORE INTO category (id, name)
+Values (2, '洋食');
+INSERT IGNORE INTO category (id, name)
+Values (3, '中華');
